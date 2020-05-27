@@ -1,0 +1,49 @@
+<mat-grid-list class="grid" cols="2" rowHeight="2:1">
+  <mat-grid-tile class="column1">
+    <form class="filtros" formGroup="formulario" (ngSubmit)="onSubmit()">
+      <h2>FILTROS</h2>
+      <mat-divider></mat-divider>
+      <mat-form-field class="example-full-width">
+        <mat-label>Editorial</mat-label>
+        <input matInput placeholder="Ex. Marvel" value="Marvel">
+        <mat-icon matSuffix>library_books</mat-icon>
+      </mat-form-field>
+      <p>
+        
+      <mat-form-field class="example-full-width">
+        <mat-label>Poderes</mat-label>
+        <input matInput placeholder="Ex. Fuerza" value="fuerza">
+        <mat-icon matSuffix>filter_list</mat-icon>
+      </mat-form-field>
+      <p>
+      <div class="elemento">
+        <label>Sexo</label> 
+        <mat-radio-group class="radio-group">
+          <mat-radio-button value="1">Masculino</mat-radio-button>
+          <mat-radio-button value="2">Femenino</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <br>
+      <button mat-raised-button color="primary" class="bttn">Buscar</button>
+        
+    </form>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <!--<mat-selection-list #shoes [multiple]="false">
+      <mat-list-option *ngFor="let shoe of typesOfShoes">
+        {{shoe}}
+      </mat-list-option>
+    </mat-selection-list>
+    
+    <p>
+      Heroe seleccionado: {{shoes.selectedOptions.selected}}
+    </p>-->
+    <ul class="lista">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </mat-grid-tile>
+
+</mat-grid-list>
